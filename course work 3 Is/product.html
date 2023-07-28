@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- setting the title or the name of webpage -->
+	<title>product</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		/*applying internal css to change the background color of the body*/
+		body{
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<!-- Forming a container to wrap all the things --> 
+	<div class="wrapper">
+		<!-- Forming the header for the webpage -->
+		<header>
+			<!-- Creating the div for the top heading section  -->
+			<div class="heading">
+				<!-- div is build to insert logo in the webpage -->
+				<div class="logo">
+					<!-- image of logo is inserted from the device  -->
+					<img src="images/logo company.png" width="150">
+				</div>
+				<!-- creating a div to insert the title of the shop -->
+				<div class="mobile-shop"><h1 style="font-size: 60px"><b>
+					PALAZ MOBILE SHOP</b></h1>
+				</div>
+				<!-- forming the div for the navigation bar -->
+				<div class="navigation">
+					<nav>
+						<ul>
+							<!-- Connection of the webpage through the link by the button -->
+							<a href="homepage.html"><button class="w">Home</button></a>
+							<a href="product.html"><button class="w">Products</button></a>
+							<a href="blog.html"><button class="w">Blog</button></a>
+							<a href="research.html"><button class="w">Research</button></a>
+							<a href="contactus.html"><button class="w">Contact Us</button></a>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+			
+		</header>
+
+		<!-- forming the main for the webpage -->
+		<main>
+			<!-- creating a big container where there will be many div with each name,products, and price of the mobile alongwith the brands. -->
+			<div class="t">
+				<div class="p" id="pros">
+					<h5>PROUCTS</h5>
+				</div>
+				<div class="i">
+					<h5>IPHONE</h5>
+				</div>
+				<div class="s">
+					<h5>SAMSUNG</h5>
+				</div>
+				<div class="m">
+					<h5>MI XIAOMI</h5>
+				</div>
+				<div class="h">
+					<h5>HUAWEI</h5>
+				</div>
+
+				<div class="iea">
+					<div class="v">
+						<img src="images/IPhone 13.png" width="175">
+					<div class="vi">
+						<B>Iphone 13 (Rs:2,50,000)</B>
+					</div>	
+					</div>
+					<div class="x">
+						<img src="images/samsung-galaxy-s9-ice-blue.jpg" width="175">
+					<div class="xs">
+						<B>Samsung s9 (Rs:1,50,000)</B>
+					</div>	
+   					</div>
+					<div class="y">
+						<img src="images/pococX3pro.png" width="230">
+					<div class="ym">
+						<B>Poco x3 pro (Rs:50,000)</B>
+					</div>	
+					</div>
+					<div class="z">
+						<img src="images/huawei-nova-5i-1.jpg" width="190">
+					<div class="zh">
+						<B>Huawei nova 5i (Rs:1,00,000)</B>
+					</div>	
+					</div>
+
+				<div class="iea">
+					<div class="v">
+						<img src="images/iPhone-1.jpg" width="130">
+					<div class="vi">
+						<B>Iphone 11 (Rs:80,000)</B>
+					</div>	
+					</div>
+					<div class="x">
+						<img src="images/samsung-galaxy-s10.jpg" width="240" height="170">
+					<div class="xs">
+						<B>Samsung s10 (Rs:3,50,000)</B>
+					</div>	
+   					</div>
+					<div class="y">
+						<img src="images/XiaomiPocoX2-current.jpg" width="243">
+					<div class="ym">
+						<B>Poco x2 pro (Rs:30,000)</B>
+					</div>	
+					</div>
+					<div class="z">
+						<img src="images/huawei-p20.jpg" width="195">
+					<div class="zh">
+						<B>Huawei p20 (Rs:1,30,000)</B>
+					</div>	
+					</div>	
+
+				</div>	
+			</div>
+		</main>
+		<footer>
+			<!-- A main div is formed and inside that div the five div is formed where in each div picture ,text, and symbol is added on it along with the structure -->
+			<div class="fo">
+				<div class="fre">
+					<h5>Free App</h5>
+				</div>
+				<div>
+					<!-- inserting images from the device for the logo of free app -->
+					<img src="images/178-1781412_online-web-presence-play-store-and-app-store.png" class="brand-img">
+				</div>
+				<div class="aus">
+					<h5 style="font-size: 20px">About Us</h5>
+					<p>
+						Mobile shopping is a company originated in a Nepal which provides mainly four brands of mobile which is Iphone, samsung,mi xiaomi and huawei.This company just open in 31 May,2022. We have all design of mobile present in our company of four brands.
+						<br>
+						<br>
+						You can contact us in 
+						email: palazmobileshop@gmail.com
+						<br>
+						contactnumber:9818870506
+						<br>
+						<br>
+						©2022,Palaz Mobile Shop.
+						ALl rights are registered on the palaz mobile shop. 
+					</p>
+				</div>
+					<div class="fol">
+						<h5 style="font-size: 20px">
+							Follow Us
+						</h5>
+					</div>
+					<div class="la">
+						<!-- inserting the logo of social media -->
+						<img src="images/social-media-icons-bundle-facebook-instagram-snapchat-linkedin-and-other-logo-buttons-free-vector.png" width="300" height="150">
+					</div>
+			</div>
+		</footer>
+	</div>
+	<!-- applying a JavaScipt to change the background colour of the products in every 2 second -->
+	<script type="text/javascript">
+		/*variable i is declared with the value 0*/
+		var i = 0;
+		/*creation of function name change*/
+		function change(){
+			/*id pros of the product is called */
+			var doc = document.getElementById('pros');
+			/*different color is set for in the variable color along with making the arrays*/
+			var color = ["yellow","lightred","blue","orange","silver"];
+			doc.style.backgroundColor = color[i];
+			i = (i + 1)% color.length;
+		}
+		setInterval(change,2000);
+	</script>
+
+</body>
+</html>

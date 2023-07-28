@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- setting the title or the name of webpage -->
+	<title>contact us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		/*applying internal css to change the background color of the body*/
+		body{
+			background-color: gray;
+		}
+	</style>
+	
+</head>
+<body >
+	<!-- Forming a container to wrap all the things -->
+	<div class="wrapper">
+		<!-- Forming the header for the webpage -->
+		<header>
+			<!-- Creating the div for the top heading section  -->
+			<div class="heading">
+				<div class="logo">
+					<img src="images/logo company.png" width="150">
+				</div>
+				<!-- creating a div to insert the title of the shop -->
+				<div class="mobile-shop"><h1 style="font-size: 60px"><b>
+					PALAZ MOBILE SHOP</b></h1>
+				</div>
+				<!-- forming the div for the navigation bar -->
+				<div class="navigation">
+					<nav>
+						<ul>
+							<a href="homepage.html"><button class="w">Home</button></a>
+							<a href="product.html"><button class="w">Products</button></a>
+							<a href="blog.html"><button class="w">Blog</button></a>
+							<a href="research.html"><button class="w">Research</button></a>
+							<a href="contactus.html"><button class="w">Contact Us</button></a>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+			
+		</header>
+
+		<!-- forming the main for the webpage -->
+		<main>
+
+			<br>
+			<br>
+			<h2 style="font-size: 40px">CONTACT US</h2>
+			<br>
+			<br>
+
+
+			<!-- designing the validation form for contact us webpage in the div -->
+			<div class="contbor">
+				<form name="messageForm" onsubmit="validateForm()">
+					<div class="namny">
+						<label style="font-size:30px">First Name: </label>
+						<br>
+						<br>
+						<input type="text" name="fname">
+						<br>
+						<br>
+
+						<label style="font-size:30px">Last Name: </label>
+						<br>
+						<br>
+						<input type="text" name="lname">
+						<br>
+						<br>
+
+						<label style="font-size:30px">Phone Number: </label>
+						<br>
+						<br>
+						<input type="text" name="lnumber">
+						<br>
+						<br>
+
+						<label style="font-size:30px">Email: </label>
+						<br>
+						<br>
+						<input type="text" name="lemail">
+						<br>
+						<br>
+
+						<label style="font-size:30px">Gender: </label>
+						<br>
+						<br>
+						<input type="radio" name="genderDetails" value="male" checked>Male
+						<br>
+						<br>
+						<input type="radio" name="genderDetails" value="female">Female
+						<br>
+						<br>
+					</div>
+					<div class="msg">
+						<label style="font-size:30px">Message:</label>
+						<br>
+						<br>
+						<textarea rows="20" cols="90" name="message" placeholder="Enter your message"></textarea>
+						<br>
+						<br>
+					</div>
+					<div class="sbmit">	
+						<input type="submit" value="Submit Button">
+					</div>	
+				</form>
+			</div>	
+		<!-- applying a JavaScipt for the form validation -->
+		<script type="text/javascript">
+			/*function validform is created*/
+			function validateForm()
+			{
+				/*six variable are created according to the six label*/
+				var firstName = document.forms["messageForm"]["fname"].value;
+				var lastName = document.forms["messageForm"]["lname"].value;
+				var phoneNumber = document.forms["messageForm"]["lnumber"].value;
+				var email = document.forms["messageForm"]["lemail"].value;
+				var gender = document.forms["messageForm"]["genderDetails"].value;
+				var messageDetails = document.forms["messageForm"]["message"].value;
+
+				/*conditional statements*/
+				if (firstName == "" || lastName == "" || phoneNumber == "" || email == "" || messageDetails == "") 
+				{
+					/*alert message is displayed*/
+					alert("Please enter the value!!!");
+				}
+
+				else
+				{
+					/*alert message displayed*/
+					alert("Thank you for your submission!!!")
+				}
+			}
+		</script>
+		</main>
+		<br>
+		<br>
+
+		<!-- forming the footer for the webpage -->
+		<footer>
+			<!-- A main div is formed and inside that div the five div is formed where in each div picture ,text, and symbol is added on it along with the structure -->
+			<div class="fo">
+				<div class="fre">
+					<h5>Free App</h5>
+				</div>
+				<div>
+					<!-- inserting images from the device for the logo of free app -->
+					<img src="images/178-1781412_online-web-presence-play-store-and-app-store.png" class="brand-img">
+				</div>
+				<div class="aus">
+					<h5 style="font-size: 20px">About Us</h5>
+					<p>
+						Mobile shopping is a company originated in a Nepal which provides mainly four brands of mobile which is Iphone, samsung,mi xiaomi and huawei.This company just open in 31 May,2022. We have all design of mobile present in our company of four brands.
+						<br>
+						<br>
+						You can contact us in 
+						email: palazmobileshop@gmail.com
+						<br>
+						contactnumber:9818870506
+						<br>
+						<br>
+						©2022,Palaz Mobile Shop.
+						ALl rights are registered on the palaz mobile shop. 
+					</p>
+				</div>
+					<div class="fol">
+						<h5 style="font-size: 20px">
+							Follow Us
+						</h5>
+					</div>
+					<div class="la">
+						<!-- inserting the logo of social media -->
+						<img src="images/social-media-icons-bundle-facebook-instagram-snapchat-linkedin-and-other-logo-buttons-free-vector.png" width="300" height="150">
+					</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- setting the title or the name of webpage -->
+	<title>coursework3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		/*applying internal css to change the background color of the body*/
+		body{
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<!-- Forming a container to wrap all the things --> 
+	<div class="wrapper">
+		<!-- Forming the header for the webpage -->
+		<header>
+			<!-- Creating the div for the top heading section  -->
+			<div class="heading">
+				<!-- div is build to insert logo in the webpage -->
+				<div class="logo">
+					<!-- image of logo is inserted from the device  -->
+					<img src="images/logo company.png" width="150">
+				</div>
+				<!-- creating a div to insert the title of the shop -->
+				<div class="mobile-shop"><h1 style="font-size: 60px"><b>
+					PALAZ MOBILE SHOP</b></h1>
+				</div>
+				<!-- forming the div for the navigation bar -->
+				<div class="navigation">
+					<nav>
+						<ul>
+							<!-- Connection of the webpage through the link by the button -->
+							<a href="homepage.html"><button class="w">Home</button></a>
+							<a href="product.html"><button class="w">Products</button></a>
+							<a href="blog.html"><button class="w">Blog</button></a>
+							<a href="research.html"><button class="w">Research</button></a>
+							<a href="contactus.html"><button class="w">Contact Us</button></a>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+			
+		</header>
+
+		<!-- forming the main for the webpage -->
+		<main>
+			<!-- building a div for the image to insert in the current structure -->
+			<div class="ban">
+				<!-- inserting the image from the device in the webpage -->
+				<img src="images/slider1.jpg" id="slide">
+			</div>
+			<h4 style="font-size: 40px; text-align: center; background-color: yellow;"><b>BRANDS</b></h4>
+			<!-- div is designed to make the container for the 4 images -->
+			<div class="ima">
+				<!-- for all the image single div is formed each along with the another div of the name at the bottom of the each image and the image is insert from the device along with the name of the brands -->
+				<div class="an">
+					<img src="images/iphonebrand.png" width="80">
+				<div class="han">
+					<B>IPHONE</B>
+				</div>	
+				</div>
+				<div class="b">
+					<img src="images/samsunng.jpg" class="brand-img">
+				<div class="hb">
+					<B>SAMSUNG</B>
+				</div>	
+   				</div>
+				<div class="c">
+					<img src="images/MI.jpg" class="brand-img">
+				<div class="hc">
+					<B>MI XIAOMI</B>
+				</div>	
+				</div>
+				<div class="d">
+					<img src="images/huwaei.png" width="150">
+				<div class="hd">
+					<B>HUAWEI</B>
+				</div>	
+				</div>
+
+			</div>	
+		</main>
+		<!-- forming the footer for the webpage -->
+		<footer>
+			<!-- A main div is formed and inside that div the five div is formed where in each div picture ,text, and symbol is added on it along with the structure -->
+			<div class="fo">
+				<div class="fre">
+					<h5>Free App</h5>
+				</div>
+				<div>
+					<!-- inserting images from the device for the logo of free app -->
+					<img src="images/178-1781412_online-web-presence-play-store-and-app-store.png" class="brand-img">
+				</div>
+				<div class="aus">
+					<h5 style="font-size: 20px">About Us</h5>
+					<p>
+						Mobile shopping is a company originated in a Nepal which provides mainly four brands of mobile which is Iphone, samsung,mi xiaomi and huawei.This company just open in 31 May,2022. We have all design of mobile present in our company of four brands.
+						<br>
+						<br>
+						You can contact us in 
+						email: palazmobileshop@gmail.com
+						<br>
+						contactnumber:9818870506
+						<br>
+						<br>
+						©2022,Palaz Mobile Shop.
+						ALl rights are registered on the palaz mobile shop. 
+					</p>
+				</div>
+					<div class="fol">
+						<h5 style="font-size: 20px">
+							Follow Us
+						</h5>
+					</div>
+					<div class="la">
+						<!-- inserting the logo of social media -->
+						<img src="images/social-media-icons-bundle-facebook-instagram-snapchat-linkedin-and-other-logo-buttons-free-vector.png" width="300" height="150">
+					</div>
+			</div>
+		</footer>
+	</div>
+    <!-- applying a JavaScipt for the slider in the banner where the images change in every 2 second -->
+	<script>
+			/*variable i is declared with the value 0*/
+			var i = 0;
+			/*different images are add in the array*/
+			var images=["images/slider1.jpg","images/slider2.jpg","images/slider5.png","images/slider6.jpg"];
+			setInterval(changeImg, 2000)
+			/*creation of function name changeImg*/
+			function changeImg() {
+				document.getElementById('slide').src = images[i];
+				/*conditional statements*/
+				if (i < images.length - 1){
+					i++;
+				}else{
+					i = 0;
+				}
+		}
+	</script>
+
+</body>
+</html>

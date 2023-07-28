@@ -1,0 +1,19 @@
+
+*********************************************************************************
+                   PALAZ COSTUME RENTAL SHOP                                   
+                             Costumer Bill                                       
+*********************************************************************************
+Name of the customer = Abhijan
+Date and  time of returning = Thu Sep  8 07:45:26 2022
+Total price is = 29.0
+Item returned = Formal Suite,Megaplex
+_________________________________________________________________________________
+*********************************************************************************
+                   PALAZ COSTUME RENTAL SHOP                                   
+                             Costumer Bill                                       
+*********************************************************************************
+Name of the customer = Abhijan
+Date and  time of returning = Thu Sep  8 07:46:25 2022
+Total price is = 60.0
+Item returned = Formal Suite,Megaplex
+_________________________________________________________________________________

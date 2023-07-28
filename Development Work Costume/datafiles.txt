@@ -1,0 +1,12 @@
+Cop Costume Set,Cartmaxon,15.0, 3
+Formal Suite,Megaplex,14.5, 224
+Formal Suite,Levis conlon,12.0,130
+Choose Pant,Jeans jeros,15.0,180
+Hooded Jacket,Bershaka,30.0,250
+Sweat Shirt,Bella scar,13.0,170
+Batman Pajamas,DC comics,34.0,250
+Fitted Blazer,LiverPool,50.0,120
+One Piece,Bershaka,30.0,230
+
+
+

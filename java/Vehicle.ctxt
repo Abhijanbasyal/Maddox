@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Vehicle
+comment0.text=\r\n\ This\ is\ a\ vehicle\ class\ which\ have\ five\ attributes\ on\ it\ that\ is\ vehicle_ID,\ vehicle_name,\ vehicle_weight,\ vehicle\ color,\ vehicle_speed\ where\ keywords\ of\ vehicle_ID\ is\ int\ and\ others\ is\ String.\r\n\ In\ the\ constructor,\ the\ constructor's\ parameters\ are\ used\ to\ initialize\ the\ vehicle_ID,\ vehicle_name,\ vehicle_color\ and\ vehicle_weight.\r\n\ Each\ attribute\ has\ a\ corresponding\ accessor\ method.\r\n\ vehicle_speed\ and\ vehicle_color\ has\ a\ setter\ method.\r\n\ The\ values\ are\ displayed\ using\ the\ display\ method.\r\n\ @author\ (Abhijan\ Basyal)\r\n\ @version\ (2022/05/18)\r\n
+comment1.params=vehicle_ID\ vehicle_name\ vehicle_color\ vehicle_weight
+comment1.target=Vehicle(int,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=int\ getvehicle_ID()
+comment3.params=
+comment3.target=java.lang.String\ getvehicle_name()
+comment4.params=
+comment4.target=java.lang.String\ getvehicle_weight()
+comment5.params=
+comment5.target=java.lang.String\ getvehicle_color()
+comment6.params=
+comment6.target=java.lang.String\ getvehicle_speed()
+comment7.params=vehicle_speed
+comment7.target=void\ setvehicle_speed(java.lang.String)
+comment8.params=vehicle_color
+comment8.target=void\ setvehicle_color(java.lang.String)
+comment9.params=
+comment9.target=void\ display()
+numComments=10

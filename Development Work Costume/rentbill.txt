@@ -1,0 +1,10 @@
+
+*********************************************************************************
+                   PALAZ COSTUME RENTAL SHOP                                   
+                             Costumer Bill                                       
+*********************************************************************************
+Name of the customer = Abhijan
+Date and  time of renting = Thu Sep  8 07:47:02 2022
+Total price is = 60.0
+Item rented = Cop Costume Set,Cartmaxon
+_________________________________________________________________________________
