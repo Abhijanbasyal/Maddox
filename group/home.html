@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attire</title>
+
+    <!-- Importing the external css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <!-- title of the company -->
+            <h1 class="title">ATTIRE</h1>
+            
+            <!-- making the navigation for connecting webpage -->
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <!-- Connection of the webpage through the link by the button -->
+                        <a href="home.html"><button class="button1"><b style="font-size: 15px; color: antiquewhite;">HOME</b></button></a>
+                        <a href="product.html"><button class="button1"><b style="font-size: 15px; color:antiquewhite;">PRODUCT</b></button></a>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- For cart and profile -->
+            <div class="container">
+                <img src="images/cart.png" width="35">
+                <img src="images/profile.jpg" width="35" height="30">
+            </div>
+
+            <!-- for searching -->
+            <div class="searchbar">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><img src="images/searchimage.jpg" width="10" height="10"></button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <div class="middlepart">
+                <!-- image slider -->
+                <div class="imgsldr" >
+                    <!-- inserting the image from the device in the webpage  -->
+                    <img src="images/slider1.jpg" id="slide" width="1450" height="390">
+
+                </div>
+
+                <div class="productgroup">
+
+                    <div class="pr1">
+
+                        <img src="images/product1.jpg" height="270" width="240">
+                        <h3 style="text-align: center;" class="letterfnt"> SHIRT</h3>
+                        
+                    </div>
+                    <div class="pr2">
+                        
+                        <img src="images/product2.jpg" height="270" width="240">
+                        <h3 style="text-align: center;" class="letterfnt"> HOODIE</h3>
+
+                    </div>
+                    <div class="pr3">
+                        
+                        <img src="images/product3.jpg" height="270" width="240">
+                        <h3 style="text-align: center;" class="letterfnt"> COAT</h3>
+
+                    </div>
+                    <div class="pr4">
+                        
+                        <img src="images/product4.jpg" height="270" width="240">
+                        <h3 style="text-align: center;" class="letterfnt"> SAREE</h3>
+                        
+                    </div>
+                    <div class="pr5">
+
+                        <img src="images/product5.jpg" height="270" width="240">
+                        <h3 style="text-align: center;" class="letterfnt"> JACKET</h3>
+                        
+                    </div>
+                    <div class="pr6">
+                        
+                        <img src="images/product6.jpg" height="270" width="240">
+                        <h3 style="text-align: center;" class="letterfnt"> SWEATER</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+                <!-- main div for footer one -->
+                <div class="footerbtm">
+                    
+                    <div class="introduce">
+                        <h5 style="font-size: 20px; text-align: left; " >CEO</h5>
+                        <p><b>Ryan Lepcha</b>
+                            </br>
+                            Founder of the Attire company </br>
+                        </p>
+                        <h5 style="font-size: 20px; text-align: left; " >CONTRIBUTOR</h5>                        
+                        <p>
+                        Sujal Tamrakar</br>
+                        Abhijan Basyal</br>
+                        Aayush Shrestha
+                         </p>
+                    </div>
+
+                    <div class="aboutus">
+                        <h5 style="font-size: 20px">About Us</h5>
+                        <p>
+                            ATTIRE is a newly formed Nepalese clothing company that offers a wide range of garments for both men and women. The company was created on May 6, 2023, and it sells a variety of prominent clothing brands. ATTIRE has you covered whether you're looking for casual clothes or formal attire. Attire take pride in offering the consumers a vast range of wardrobe options.                            <br>
+                            <br>
+                            You can contact us in 
+                            email: attireclothing@gmail.com
+                            <br>
+                            contactnumber:9818860506
+                            <br>
+                            <br>
+                            ©2022 attire Nepal, Inc.
+                            All rights are registered on the attire Nepal. 
+                        </p>
+                    </div>
+                    
+                    <div class="socialmdia">
+                        <h5 style="font-size: 20px; text-align: center;">
+                            Follow Us on
+                        </h5>
+                        <div class="apps">                  
+                            <img src="images/facebook.jpg" height="95" width="95">
+                            <img src="images/instagram.jpg" height="100" width="100">
+                            <img src="images/twitter.jpg" height="100" width="100">
+                        </div> 
+                    </div>
+                </div>
+        </footer>
+        <script>
+            var i = 0;
+            var images=["images/slider2.jpg","images/slider3.jpg","images/slider4.jpg"];
+            setInterval(changeImg, 2000)
+
+            function changeImg() {
+                document.getElementById('slide').src = images[i];
+
+                if (i < images.length - 1){
+                    i++;
+                }else{
+                    i = 0;
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
